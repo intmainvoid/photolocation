@@ -15,13 +15,13 @@ class Model {
 
     var locations: Array<Location> = []
 
-    init() {
+    init(locationDataAssetName: String = "LocationData") {
         if let locationsArray = UserDefaults().object(forKey: "locations") as? Data {
             locations = NSKeyedUnarchiver.unarchiveObject(with: locationsArray) as! Array<Location>
             return
         }
 
-        guard let asset = NSDataAsset(name: "LocationData", bundle: Bundle.main) else {
+        guard let asset = NSDataAsset(name: locationDataAssetName, bundle: Bundle.main) else {
             return
         }
         let json = JSON(data: asset.data)

@@ -1,0 +1,20 @@
+{
+    "locations": [
+        {
+            "name": "One Place",
+            "lat": -33.85,
+            "lng": 151.21
+        },
+        {
+            "name": "Two Place",
+            "lat": -33.88,
+            "lng": 151.27
+        },
+        {
+            "name": "Three Place",
+            "lat": -33.86,
+            "lng": 151.21
+        }
+    ],
+    "updated": "2017-02-19T08:00:00Z"
+}

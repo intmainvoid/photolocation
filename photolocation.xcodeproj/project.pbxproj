@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F5F4E791E598D9A00491CB2 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F4E781E598D9A00491CB2 /* Array+Extensions.swift */; };
+		1F5F4E8A1E59969900491CB2 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F4E891E59969900491CB2 /* LocationTests.swift */; };
+		1F5F4E8C1E59A03700491CB2 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F4E8B1E59A03700491CB2 /* ModelTests.swift */; };
 		1FC70D2A1E55181400BF8166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC70D291E55181400BF8166 /* AppDelegate.swift */; };
 		1FC70D2C1E55181400BF8166 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC70D2B1E55181400BF8166 /* MapViewController.swift */; };
 		1FC70D2F1E55181400BF8166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC70D2D1E55181400BF8166 /* Main.storyboard */; };
@@ -21,8 +23,22 @@
 		1FC70D491E55845100BF8166 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC70D481E55845100BF8166 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1F5F4E831E5994A800491CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FC70D1E1E55181400BF8166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC70D251E55181400BF8166;
+			remoteInfo = photolocation;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1F5F4E781E598D9A00491CB2 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		1F5F4E7E1E5994A800491CB2 /* photolocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photolocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5F4E821E5994A800491CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5F4E891E59969900491CB2 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		1F5F4E8B1E59A03700491CB2 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		1FC70D261E55181400BF8166 /* photolocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photolocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC70D291E55181400BF8166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FC70D2B1E55181400BF8166 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F5F4E7B1E5994A800491CB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FC70D231E55181400BF8166 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,11 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F5F4E7F1E5994A800491CB2 /* photolocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F5F4E821E5994A800491CB2 /* Info.plist */,
+				1F5F4E891E59969900491CB2 /* LocationTests.swift */,
+				1F5F4E8B1E59A03700491CB2 /* ModelTests.swift */,
+			);
+			path = photolocationTests;
+			sourceTree = "<group>";
+		};
 		1FC70D1D1E55181400BF8166 = {
 			isa = PBXGroup;
 			children = (
-				1FC70D471E55843D00BF8166 /* external */,
-				1FC70D281E55181400BF8166 /* photolocation */,
+				1FC70D471E55843D00BF8166 /* External */,
+				1FC70D281E55181400BF8166 /* Source */,
+				1F5F4E7F1E5994A800491CB2 /* photolocationTests */,
 				1FC70D271E55181400BF8166 /* Products */,
 				1FC70D3B1E55190A00BF8166 /* Frameworks */,
 			);
@@ -64,11 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				1FC70D261E55181400BF8166 /* photolocation.app */,
+				1F5F4E7E1E5994A800491CB2 /* photolocationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FC70D281E55181400BF8166 /* photolocation */ = {
+		1FC70D281E55181400BF8166 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				1FC70D291E55181400BF8166 /* AppDelegate.swift */,
@@ -83,6 +118,7 @@
 				1FC70D321E55181400BF8166 /* LaunchScreen.storyboard */,
 				1FC70D351E55181400BF8166 /* Info.plist */,
 			);
+			name = Source;
 			path = photolocation;
 			sourceTree = "<group>";
 		};
@@ -94,17 +130,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1FC70D471E55843D00BF8166 /* external */ = {
+		1FC70D471E55843D00BF8166 /* External */ = {
 			isa = PBXGroup;
 			children = (
 				1FC70D481E55845100BF8166 /* SwiftyJSON.swift */,
 			);
-			name = external;
+			name = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1F5F4E7D1E5994A800491CB2 /* photolocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5F4E851E5994A800491CB2 /* Build configuration list for PBXNativeTarget "photolocationTests" */;
+			buildPhases = (
+				1F5F4E7A1E5994A800491CB2 /* Sources */,
+				1F5F4E7B1E5994A800491CB2 /* Frameworks */,
+				1F5F4E7C1E5994A800491CB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5F4E841E5994A800491CB2 /* PBXTargetDependency */,
+			);
+			name = photolocationTests;
+			productName = photolocationTests;
+			productReference = 1F5F4E7E1E5994A800491CB2 /* photolocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1FC70D251E55181400BF8166 /* photolocation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FC70D381E55181400BF8166 /* Build configuration list for PBXNativeTarget "photolocation" */;
@@ -132,6 +186,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Gavin Conway";
 				TargetAttributes = {
+					1F5F4E7D1E5994A800491CB2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FFN66NEEHC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1FC70D251E55181400BF8166;
+					};
 					1FC70D251E55181400BF8166 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = FFN66NEEHC;
@@ -153,11 +213,19 @@
 			projectRoot = "";
 			targets = (
 				1FC70D251E55181400BF8166 /* photolocation */,
+				1F5F4E7D1E5994A800491CB2 /* photolocationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F5F4E7C1E5994A800491CB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FC70D241E55181400BF8166 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,6 +239,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F5F4E7A1E5994A800491CB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5F4E8C1E59A03700491CB2 /* ModelTests.swift in Sources */,
+				1F5F4E8A1E59969900491CB2 /* LocationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FC70D221E55181400BF8166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +264,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F5F4E841E5994A800491CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FC70D251E55181400BF8166 /* photolocation */;
+			targetProxy = 1F5F4E831E5994A800491CB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1FC70D2D1E55181400BF8166 /* Main.storyboard */ = {
@@ -208,6 +293,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1F5F4E861E5994A800491CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FFN66NEEHC;
+				INFOPLIST_FILE = photolocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conwayinternational.photolocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photolocation.app/photolocation";
+			};
+			name = Debug;
+		};
+		1F5F4E871E5994A800491CB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FFN66NEEHC;
+				INFOPLIST_FILE = photolocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conwayinternational.photolocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photolocation.app/photolocation";
+			};
+			name = Release;
+		};
 		1FC70D361E55181400BF8166 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,6 +447,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F5F4E851E5994A800491CB2 /* Build configuration list for PBXNativeTarget "photolocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5F4E861E5994A800491CB2 /* Debug */,
+				1F5F4E871E5994A800491CB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1FC70D211E55181400BF8166 /* Build configuration list for PBXProject "photolocation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
