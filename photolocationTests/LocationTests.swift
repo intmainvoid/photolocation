@@ -62,12 +62,20 @@ class LocationTests: XCTestCase {
         tearDown()
     }
 
+    func testLocationDistance() {
+        setUp()
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        let latitude = -33.889967
+        let longitude = 151.276440
+        let location = Location(name: "Another great location", latitude: latitude, longitude: longitude)
+
+        let otherLocation = CLLocation(latitude: -33.860178, longitude: 151.212706)
+
+        let distance = location.distanceFromLocation(location: otherLocation)
+
+        XCTAssertEqual(distance, 6759.312570926123, "distance '\(distance)' has an unexpected value")
+
+        tearDown()
     }
-    
+
 }

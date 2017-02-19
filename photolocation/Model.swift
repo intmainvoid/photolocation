@@ -8,12 +8,14 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 class Model {
 
     static let sharedInstance = Model()
 
     var locations: Array<Location> = []
+    var currentUserLocation: CLLocation?
 
     init(locationDataAssetName: String = "LocationData") {
         if let locationsArray = UserDefaults().object(forKey: "locations") as? Data {

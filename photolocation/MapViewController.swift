@@ -99,6 +99,11 @@ extension MapViewController: MKMapViewDelegate {
         }
     }
 
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        print("User Location: \(userLocation.location)")
+        Model.sharedInstance.currentUserLocation = userLocation.location
+    }
+
 }
 
 

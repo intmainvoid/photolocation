@@ -44,4 +44,9 @@ class Location: NSObject, NSCoding {
         coder.encode(longitude, forKey: "longitude")
     }
 
+    func distanceFromLocation(location: CLLocation) -> CLLocationDistance {
+        let thisLocation = CLLocation(latitude: latitude, longitude: longitude)
+        return thisLocation.distance(from: location)
+    }
+
 }
