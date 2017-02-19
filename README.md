@@ -14,3 +14,4 @@ The UI is pretty much self-explanatory, but far from perfect, so here are a few 
 
 - The list of the locations contains only the name of the location. To see more details about that location the user should tap on it to open the detail view
 
+Built with Xcode 8.2.1, Swift version 3.0.2
